@@ -27,9 +27,9 @@ module.exports = function (app) {
       return res.json({error: 'Invalid value for locale field'})
 
       if(translation == text || !translation) 
-        return res.json({text, translation: 'Everything looks good to me!'})
+        return res.json({text: text, translation: 'Everything looks good to me!'})
 
       else
-        return res.json({text, translation: translation[1]})
+        return res.json({text: text, translation: translation[1]})
     });
 };

@@ -105,7 +105,7 @@ class Translator {
         highlightReplaceAll(text, matchesObj) {
             let replica = new RegExp(Object.keys(matchesObj).join('|'), 'gi');
             return text.replace(replica, (matched) => {
-                return `<span class="highlight"> ${matchesObj[matched.toLowerCase()]}</span>`
+                return `<span class="highlight">${matchesObj[matched.toLowerCase()]}</span>`
             });
         }
 

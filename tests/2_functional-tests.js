@@ -22,7 +22,7 @@ suite('Functional Tests', () => {
             .end((err, res) => {
                 assert.equal(res.status, 200)
                 assert.equal(res.body.translation, 
-                    'Mangoes are my <span class="highlight"> favourite</span> fruit.'
+                    'Mangoes are my <span class="highlight">favourite</span> fruit.'
                 )
                 done();
             })
